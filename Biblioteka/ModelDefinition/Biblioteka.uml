@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="c3f5e8d1-dc41-469e-affe-719b482f0a4c"
   name="Biblioteka" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -30,6 +30,16 @@
         name="uzytkownik"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="7257b667-32e1-4eac-a2c8-a1910ba1fbc2"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="c8b8a931-9d62-48a2-9354-dd3a31a40024"
+              LastKnownName="Osoba"
+              LastKnownLocation="Biblioteka.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="4d4d5e5f-7de2-4dbc-9fef-1bcade6302a7"
@@ -235,6 +245,16 @@
         name="bibliotekarz"
         isAbstract="false"
         isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="b44d4646-77fa-4daf-9b39-6aea59f09568"
+            isSubstitutable="false">
+            <actorMoniker
+              Id="c8b8a931-9d62-48a2-9354-dd3a31a40024"
+              LastKnownName="Osoba"
+              LastKnownLocation="Biblioteka.uml" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association
             Id="ab9c3cfe-17a3-4267-a310-0f55b7901c29"
@@ -1509,6 +1529,13 @@
       <undefinedType
         Id="9d095bd2-b645-423f-97c0-dc6c7d37b8c5"
         name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="c8b8a931-9d62-48a2-9354-dd3a31a40024"
+        name="Osoba"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="7f19654b-0f37-4d2a-9dfe-44e306b6d28c" name="UMLUseCaseDiagramBiblioteka" linkedPackageId="b85eb2ce-b9c0-4a4a-af54-86fb9738bf46" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="062d3df3-e6a8-405d-be14-774934a7bbb5">
-      <profileInstance Id="0b962ecd-3782-4248-9629-1f964d57b156" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="2003a7fe-0384-42b9-8de0-bb76c529e5ff">
-      <profileInstance Id="26b00729-e238-42b5-9ce2-fd71cb434fda" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="7f19654b-0f37-4d2a-9dfe-44e306b6d28c" name="UMLUseCaseDiagramBiblioteka" linkedPackageId="b85eb2ce-b9c0-4a4a-af54-86fb9738bf46" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="18371058-4efb-4a59-975a-3dce572e98cb" name="uzytkownik" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0a067505-14eb-4796-9daf-650f54f40324" />
+        <generalsInternal>
+          <generalization Id="592d79ed-a170-4ae7-afa1-222d79a7aa1b" isSubstitutable="false">
+            <actorMoniker Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" LastKnownName="Osoba" />
+            <elementDefinition Id="7257b667-32e1-4eac-a2c8-a1910ba1fbc2" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="ea3549b0-89ce-4697-bd77-3ab8422ca02d" isDerived="false" sourceEndRoleName="uzytkownik" targetEndRoleName="logowanie" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="3ba3675f-cf2f-4ad1-9431-d72f84c1be83" LastKnownName="logowanie" />
@@ -105,6 +97,12 @@
     <useCaseModelRootHasTypes>
       <actor Id="26603e1f-69a3-4766-898f-2dc123e9df2e" name="bibliotekarz" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0ea5cfff-b94e-4e84-a2cb-34f53e1c9a7d" />
+        <generalsInternal>
+          <generalization Id="da315914-12f8-444b-9edd-0c031cbe83b6" isSubstitutable="false">
+            <actorMoniker Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" LastKnownName="Osoba" />
+            <elementDefinition Id="b44d4646-77fa-4daf-9b39-6aea59f09568" />
+          </generalization>
+        </generalsInternal>
         <targetEnds>
           <association Id="797c910b-a33a-440f-a86c-e76457ba0dc4" isDerived="false" sourceEndRoleName="bibliotekarz" targetEndRoleName="logowanie" isLeaf="false" isAbstract="false">
             <useCaseMoniker Id="3ba3675f-cf2f-4ad1-9431-d72f84c1be83" LastKnownName="logowanie" />
@@ -298,8 +296,27 @@
         </subjects>
       </useCase>
     </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5a58c4ac-b24c-4608-9e29-9041313dce0f" name="Osoba" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8b8a931-9d62-48a2-9354-dd3a31a40024" />
+      </actor>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="b85eb2ce-b9c0-4a4a-af54-86fb9738bf46" name="Biblioteka">
     <elementDefinition Id="c3f5e8d1-dc41-469e-affe-719b482f0a4c" />
+    <profileInstances>
+      <packageHasProfileInstances Id="062d3df3-e6a8-405d-be14-774934a7bbb5">
+        <profileInstance Id="0b962ecd-3782-4248-9629-1f964d57b156" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2003a7fe-0384-42b9-8de0-bb76c529e5ff">
+        <profileInstance Id="26b00729-e238-42b5-9ce2-fd71cb434fda" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
